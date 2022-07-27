@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Edu TAS Beginner', cursive;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #DAB785;
+    --main-glow: #f4d09e;
+    --sub: #343A40;
+
+    --bg: #E0E1E9;
+}
+
+ul[role=list],
+ol[role=list] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5; /* might change it later */
+    background-color: var(--bg);
+}
+
+header, h2 {
+    text-shadow: 0 0 4px var(--main);
+}
+
+img, picture, svg {
+    max-width: 100%;
+    display: block;
+}
+
+ol {
+    list-style: none;
+}
+
+.wrapper {
+    width: 1000px;
+}
+
+.img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits, .credits a {
+    font-size: .8rem;
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    color: var(--bg);
+
+    z-index: 1;
+}
+
+.img-container {
+    position: relative;
+}
+
+.credits a {
+    color: var(--main);
+}
+
+.credits a:hover {
+    text-shadow: 0 0 10px var(--main-glow);
+}
+
+.credits a:active {
+    color: var(--main-glow);
+}
+
+.hidden {
+    display: none;
+}
+
+.page-sections {
+    animation: fade-in 300ms ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* Nav Bar
+==============================================================================================*/
+#nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+}
+
+#nav-buttons {
+    position: absolute;
+    right: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+#nav-buttons a {
+    margin-left: .5rem;
+    
+    color: var(--sub);
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav-buttons a.selected {
+    text-decoration: underline;
+}
+
+#nav-buttons a:hover {
+    color: var(--main);
+}
+
+@media screen and (max-width: 900px) {
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    #nav-buttons {
+        position: inherit;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Header
+==============================================================================================*/
+header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+}
+
+header img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    filter: brightness(.5);
+
+    z-index: -1;
+}
+
+h1, header p {
+    color: var(--main);
+    text-align: center;
+
+    cursor: default;
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+header p {
+    font-size: 5rem;
+}
+
+header .credits, header .credits a {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    header p {
+        font-size: 2rem;
+    }
+}
+
+/* Main
+==============================================================================================*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 5rem 0;
+
+    text-align: center;
+    color: var(--main);
+    background-color: var(--sub);
+}
+
+main > div {
+    margin-bottom: 5rem;
+}
+
+main i {
+    margin-right: .5rem;
+}
+
+.fa-envelope {
+    vertical-align: middle;
+}
+
+#opening-hours-container {
+    margin-left: 20rem;
+}
+
+main .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    font-size: 3rem;
+    text-decoration: underline 2px;
+
+    cursor: default;
+}
+
+main h2:hover, #locations p:hover > i, 
+#contact p:hover > i, #contact a:hover > i {
+    color: var(--main-glow);
+    text-shadow: 0 0 7px var(--main-glow);
+}
+
+main p, main a, main li {
+    font-size: 1.5rem;
+    color: var(--main);
+}
+
+
+#locations {
+    margin-bottom: 1rem;
+}
+
+#contact {
+    margin-bottom: 1rem;
+}
+
+#opening-hours-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5rem;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 900px;
+}
+
+#about > p {
+    margin-bottom: 5rem;
+}
+
+#about .img-text {
+    width: 700px;
+}
+
+#about .img-container img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.img-text div {
+    margin-left: 2rem;
+}
+
+.img-text button {
+    width: 100%;
+
+    font-size: 3rem;
+    color: var(--bg);
+    background-color: transparent;
+    border: 2px solid var(--bg);
+
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.img-text button:hover {
+    color: var(--main-glow);
+    text-shadow: 0 0 7px var(--main-glow);
+    border: 2px solid var(--main-glow);
+    box-shadow: 0 0 7px 0 var(--main-glow);
+}
+
+
+@media screen and (max-width: 1010px) {
+    main .wrapper {
+        flex-direction: column;
+    }
+
+    #opening-hours-container {
+        margin: 5rem 0 0 0;
+    }
+
+    #about .wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .img-text {
+        flex-direction: column;
+    }
+
+    #about .img-text {
+        width: 100%;
+    }
+    
+    #about .img-container, #about .img-container ~ .wrapper {
+        margin: 0;
+    }
+
+    #about .img-container img {
+        width: 100%;
+    }
+}
+
+/* Contact Section
+==============================================================================================*/
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 800px;
+}
+
+#contact-section.hidden {
+    display: none;
+}
+
+#contact-section input, #contact-section textarea, #contact-section button {
+    padding: 2rem 1rem;
+    font-size: 2rem;
+
+    border: 1px solid var(--sub);
+    outline: none;
+    border-radius: 10px;
+}
+
+#contact-section input, #contact-section textarea {
+    width: 800px;
+}
+
+#contact-section input:focus, #contact-section textarea:focus {
+    border: 1px solid var(--main);
+    box-shadow: 0 0 10px 0 var(--main-glow);
+}
+
+#contact-section input {
+    height: 50px;
+}
+
+#contact-section textarea {
+    padding: 1rem;
+    height: 400px;
+    resize: none;
+}
+
+#contact-section textarea::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+#contact-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+
+    cursor: pointer;
+}
+
+#contact-section button:hover {
+    color: var(--bg);
+    background-color: var(--main);
+    border: 1px solid var(--main);
+    box-shadow: 0 0 10px 0 var(--main-glow);
+}
+
+#contact-section button:active {
+    filter: brightness(.8);
+}
+
+@media screen and (max-width: 810px) {
+    #contact-section input, #contact-section textarea, #contact-section button {
+        width: 100%;
+    }
+}
+
+/* Footer
+==============================================================================================*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5rem;
+    height: 300px;
+
+    color: var(--sub);
+}
+
+/* footer-email-signup */
+#footer-email-signup {
+    margin-right: 5rem;
+}
+
+#footer-email-signup div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-shadow: none;
+}
+
+#footer-email-signup input, #footer-email-signup button {
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    
+    font-size: 1.3rem;
+}
+
+#footer-email-signup input {
+    width: 100%;
+    padding-left: 1rem;
+
+    border: 2px solid var(--sub);
+}
+
+#footer-email-signup input:focus {
+    outline: none;
+    border: 2px solid var(--main);
+    box-shadow: 0 0 10px 0 var(--main-glow);
+}
+
+#footer-email-signup button {
+    width: 100px;
+
+    color: var(--bg);
+    background-color: var(--sub);
+
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+#footer-email-signup button:hover {
+    color: var(--sub);
+    background-color: var(--main);
+    box-shadow: 0 0 10px 0 var(--main-glow);
+}
+
+#footer-email-signup button:active {
+    background-color: var(--main-glow);
+}
+
+
+
+/* footer-social */
+#footer-email-signup div {
+    position: relative;
+}
+
+#email-input-error {
+    position: absolute;
+    left: 1rem;
+    bottom: -1.3rem;
+
+    display: none;
+
+    font-weight: 600;
+    color: red;
+}
+
+#email-input-error.show {
+    display: block;
+}
+
+#footer-social div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-social a {
+    cursor: pointer;
+}
+
+#footer-social i {
+    font-size: 3rem;
+    color: var(--sub);
+    transition: 200ms ease-in-out;
+}
+
+#footer-social i:hover {
+    color: var(--main);
+    text-shadow: 0 0 10px var(--main-glow);
+}
+
+#footer-social i:active {
+    color: var(--main-glow);
+}
+
+@media screen and (max-width: 1010px) {
+    footer {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    #footer-email-signup {
+        margin: 0 0 5rem 0;
+    }
+}

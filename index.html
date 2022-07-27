@@ -1,0 +1,433 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peakalo's Restaurant</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/scroll-bar.css">
+        <link rel="stylesheet" href="css/screen-loader.css">
+        <script src="https://kit.fontawesome.com/40d2b73747.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js" defer></script>
+        <script src="js/screen-loader.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Nav Bar -->
+        <div id="nav-bar">
+            <div>
+                <img src="img/title.png" alt="">
+            </div>
+
+            <div id="nav-buttons">
+                <div id="nav-button-sections">
+                    <a class="selected">Home</a>
+                    <a>Menu</a>
+                    <a>Contact</a>
+                </div>
+
+                <div>
+                    <!-- Add the href links if not project -->
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="home" class="page-sections">
+            <!-- Intro -->
+            <header class="img-container">
+                <img src="img/main-screen.jpg" alt="">
+                <h1>Howdy There!</h1>
+                <p>Come on in and enjoy family style!</p>
+                <p class="credits">Photo by <a href="https://unsplash.com/@lvnatikk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lily Banse</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            </header>
+
+            <!-- Main Content -->
+            <main>
+                <!-- Location, Contact, and Time -->
+                <div class="wrapper">
+                    <!-- Location and Contact -->
+                    <div>
+                        <div id="locations">
+                            <h2>Location</h2>
+                            <p><i class="fa-solid fa-location-dot"></i>123 SE 465th St, WA 12345</p>
+                        </div>
+
+                        <div id="contact">
+                            <h2>Contact</h2>
+                            <p><i class="fa-solid fa-phone"></i>000-000-0000</p>
+                            <a><i class="fa-solid fa-envelope"></i>example@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Hours -->
+                    <div id="opening-hours-container">
+                        <h2>Opening Hours</h2>
+                        
+                        <div id="opening-hours-list">
+        
+                            <div id="opening-hours-day">
+                                <ol>
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                    <li>Sun</li>
+                                </ol>
+                            </div>
+                            
+                            <div id="opening-hours-Time">
+                                <ol>
+                                    <li>7:00-18:00</li>
+                                    <li>7:00-18:00</li>
+                                    <li>7:00-18:00</li>
+                                    <li>7:00-18:00</li>
+                                    <li>Closed</li>
+                                    <li>10:00-22:00</li>
+                                    <li>10:00-22:00</li>
+                                </ol>
+                            </div>
+        
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- About The Restaurant -->
+                <div id="about">
+                    <p class="wrapper">Welcome to Peakalo's, a family diner started as home cooking, where we share our cooking with friends and family around our home. With many positive comments, we decided to create a restaurant so now in 1995, anyone is welcome to come in and enjoy our cooking.</p>
+
+                    <div class="img-text">
+                        <div class="img-container">
+                            <img src="img/pizza.jpg" alt="">
+                            <p class="credits">Photo by <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chad Montano</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                        </div>
+
+                        <div class="wrapper">
+                            <p>Here is our most popular and famous dish, A thin crust classic pizza sauce with Roasted eggplant, mushroom, olives and mozzarella cheese.</p>
+                            <button id="check-out-menu" type="button">Check Our Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Menu Section -->
+        <div id="menu-section" class="page-sections hidden">
+            <p id="menu-section-note">(Hover over items for picture)</p>
+
+            <!-- The following items can be more or less depending on the restaurant -->
+            <!-- Breakfast -->
+            <div class="menu-page">
+                <h3>Breakfast</h3>
+
+                <div class="border-header">
+                    <h4>Starters</h4>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Toast BB</h5>
+                            <p>$4.99</p>
+                            <img src="img/toast.jpg" alt="">
+                            <p class="credits">Photo by <a href="https://unsplash.com/@miracletwentyone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joseph Gonzalez</a> on <a href="https://unsplash.com/s/photos/breakfast?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </div>
+
+                        <p>Three Slices of French Toast with Blueberry & banana topped with homemade syrup sauce</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+                </div>
+
+                <div class="border-header">
+                    <h4>Section Name Here</h4>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+                </div>
+
+                <div class="border-header">
+                    <h4>Section Name Here</h4>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="menu-page">
+                <h3>Lunch</h3>
+
+                <div class="border-header">
+                    <h4>Party Feast</h4>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Rotella Pizza</h5>
+                            <p>$11.99</p>
+                            <img src="img/pizza.jpg" alt="">
+                            <p class="credits">Photo by <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chad Montano</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                        </div>
+
+                        <p>A thin crust classic pizza sauce with Roasted eggplant, mushroom, olives and mozzarella cheese</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>36p. Chicken Wings & Drums</h5>
+                            <p>$14.99</p>
+                            <img src="img/chicken.jpg" alt="">
+                            <p class="credits">Photo by <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chad Montano</a> on <a href="https://unsplash.com/s/photos/chicken-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </div>
+
+                        <p>18 Wings & 18 Drums with Celery side & homemade ranch sauce</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+                </div>
+
+                <div class="border-header">
+                    <h4>Section Name Here</h4>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Food Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+
+                        <p>Food Description Here</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dinner -->
+            <div class="menu-page">
+                <h3>Dinner</h3>
+                
+                <div class="border-header">
+                    <h4>Meaty</h4>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Steak & Friends</h5>
+                            <p>$19.99</p>
+                            <img src="img/steak.jpg" alt="">
+                            <p class="credits">Photo by <a href="https://unsplash.com/@__menglong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bao Menglong</a> on <a href="https://unsplash.com/s/photos/steak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </div>
+
+                        <p>An 2 inch thicc cut of flank steak cooked to desired temperature with potato friends fried</p>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Double Meat Burg x2</h5>
+                            <p>$5.99</p>
+                            <img src="img/burger-double.jpg" alt="">
+                            <p class="credits">Photo by <a href="https://unsplash.com/@amir_v_ali?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">amirali mirhashemian</a> on <a href="https://unsplash.com/s/photos/burger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </a></p>
+                        </div>
+
+                        <p>Special Dinner Burger Item with onion, tomato, lettuce, pickle, cheese, special sauce, and a double patty</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-page">
+                <h3>Drinks</h3>
+
+                <div class="double-section">
+                    <div class="border-header">
+                        <h4>Cold</h4>
+
+                        <div class="item-row">
+                            <div class="name-price">
+                                <h5>Ice Tea</h5>
+                                <p>$1.99</p>
+                                <img src="img/ice-tea.jpg" alt="">
+                                <p class="credits">Photo by <a href="https://unsplash.com/@0xrohang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rohan Gupta</a> on <a href="https://unsplash.com/s/photos/cold-drink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item-row">
+                            <div class="name-price">
+                                <h5>Orange Shock Juice</h5>
+                                <p>$3.99</p>
+                                <img src="img/orangelem.jpg" alt="">
+                                <p class="credits">Photo by <a href="https://unsplash.com/@edwardhowellphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edward Howell</a> on <a href="https://unsplash.com/s/photos/cold-drink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+  
+                    <div class="border-header">
+                        <h4>Hot</h4>
+
+                        <div class="item-row">
+                            <div class="name-price">
+                                <h5>Spice Coffee</h5>
+                                <p>$4.99</p>
+                                <img src="img/spicecoff.jpg" alt="">
+                                <p class="credits">Photo by <a href="https://unsplash.com/@americanheritagechocolate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">American Heritage Chocolate</a> on <a href="https://unsplash.com/s/photos/hot-drink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="border-header alcohol">
+                    <h4>Alcohol</h4>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>BluMoon</h5>
+
+                            <p>$5.99</p>
+                            <img src="img/moonshot.jpg" alt="">
+                            <p class="credits">Photo by <a href="https://unsplash.com/@jasonmphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Mitrione</a> on <a href="https://unsplash.com/s/photos/alchohol-blue?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                        </div>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Drink Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+                    </div>
+
+                    <div class="item-row">
+                        <div class="name-price">
+                            <h5>Drink Name Here</h5>
+                            <p>$0.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact-section" class="page-sections hidden">
+            <input id="contact-name" type="text" placeholder="Name">
+            <textarea id="contact-text" placeholder="Message / Feedback"></textarea>
+            <button id="contact-btn" type="button">Submit</button>
+        </div>
+
+        <!-- Footer for email updates and social -->
+        <footer>
+            <div id="footer-email-signup">
+                <h2>Sign up with email to receive news and updates!</h2>
+                <div>
+                    <p id="email-input-error">*Please Enter a valid Email Address</p>
+                    <input id="email-input" type="email" placeholder="Email Address">
+                    <button type="button">Submit</button>
+                </div>
+            </div>
+
+            <div id="footer-social">
+                <h2>Check Out Our Social!</h2>
+                <div>
+                    <!-- Add the href links if not project -->
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Loading -->
+        <div class="loading-wrapper">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </body>
+</html>

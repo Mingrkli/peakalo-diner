@@ -1,0 +1,157 @@
+#menu-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menu-section.hidden {
+    display: none;
+}
+
+#menu-section-note {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.menu-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+    padding: .5rem 1rem 1rem;
+    width: 800px;
+    /* Height would be set for real life page print */
+    /* height: 1200px; */
+
+    color: var(--sub);
+    background-color: var(--main);
+    border-radius: 5px;
+}
+
+/* Type Title */
+h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.border-header {
+    position: relative;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+
+    border: 2px solid var(--sub);
+    border-radius: 10px;
+}
+
+.border-header.alcohol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
+}
+
+h4 {
+    position: absolute;
+    top: -1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 0 1rem;
+
+    font-size: 1.5rem;
+    background-color: var(--main);
+}
+
+/* Last item row remove dotted underline */
+.border-header > .item-row:last-child {
+    border: none;
+}
+
+/* Menu Items */
+.item-row .name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-price {
+    position: relative;
+}
+
+.item-row {
+    border-bottom: 2px dotted var(--sub);
+}
+
+.item-row h5 {
+    font-size: 1.5rem;
+}
+
+.name-price p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.item-row > p {
+    font-weight: 500;
+}
+
+/* Item Imgs */
+.name-price img {
+    position: absolute;
+    display: none;
+    top: 2rem;
+    height: 200px;
+    width: 300px;
+
+    border: 3px solid var(--sub);
+    border-radius: 10px;
+
+    object-fit: fill;
+    z-index: 10;
+}
+
+.name-price .credits {
+    display: none;
+    left: 10px;
+    top: 2rem;
+
+    z-index: 11;
+}
+.name-price h5:hover ~ img,
+.name-price h5:hover ~ .credits {
+    display: block;
+    animation: fade-in 200ms ease-in-out;
+}
+
+.double-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+.double-section img {
+    height: 300px;
+}
+
+.double-section .name-price .credits, .double-section .name-price .credits a {
+    font-size: .7rem;
+}
+
+@media screen and (max-width: 810px) {
+    .menu-page {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    h4 {
+        white-space: nowrap;
+    }
+}
